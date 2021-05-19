@@ -71,7 +71,6 @@ const AddLeadForm = () => {
             id="first_name"
             name="first_name"
             required
-            value="John"
             ref={firstNameInputRef} // ref this
           />
           <label htmlFor="email">Email</label>
@@ -81,7 +80,6 @@ const AddLeadForm = () => {
             id="email"
             name="email"
             required
-            value="john.smith@mail.com"
             ref={emailInputRef}
           />
           <label htmlFor="location_type">Location Type</label>
@@ -104,7 +102,6 @@ const AddLeadForm = () => {
             id="last_name"
             name="last_name"
             required
-            value="Smith"
             ref={lastNameInputRef}
           />
           <label htmlFor="mobile">Mobile</label>
@@ -113,7 +110,6 @@ const AddLeadForm = () => {
             placeholder="Mobile number"
             id="mobile"
             name="mobile"
-            value="0123456789"
             required
             ref={mobileInputRef}
           />
@@ -124,7 +120,6 @@ const AddLeadForm = () => {
             id="location_string"
             type="text"
             placeholder="Location string"
-            value="Townsville"
             required
             ref={locationStringInputRef}
           />
