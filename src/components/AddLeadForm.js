@@ -91,7 +91,6 @@ const AddLeadForm = () => {
           >
             <option value="City">City</option>
             <option value="Zip">Zip</option>
-            <option value="Country">Country</option>
           </select>
         </div>
         <div className="--right">
