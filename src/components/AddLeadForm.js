@@ -57,6 +57,7 @@ const AddLeadForm = () => {
           headers: { "Content-Type": "application/json" },
         });
         console.log("Post completed", res.data.data);
+        window.location.reload();
       } catch (err) {
         console.log("Error posting data", err);
       }

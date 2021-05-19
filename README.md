@@ -4,6 +4,8 @@
 
 This is a technical test from Bitna, testing the basics of React, Redux. I have completed the GET & POST request, experimenting with useRef instead of useState hook for form.
 
-## Future developement
+## Patch notes
 
-After submitting, the form & modal must close, form data must be submitted, and page reload to show new data.
+- Pressing submit button to post data will reload page, using window.location.reload()
+
+## Future developement
