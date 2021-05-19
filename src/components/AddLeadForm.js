@@ -22,6 +22,8 @@ const AddLeadForm = () => {
 
   const formSubmissionHandler = (event) => {
     // ref the input value on submit
+    // This fucking code stay because if I remove it, data will not be sent
+    event.preventDefault();
     const firstName = firstNameInputRef.current;
     const lastName = lastNameInputRef.current;
     const email = emailInputRef.current;
@@ -42,6 +44,7 @@ const AddLeadForm = () => {
     for (const item of arr) {
       object[item.name] = item.value;
     }
+
     const json = JSON.stringify(object);
 
     postData();
@@ -53,7 +56,7 @@ const AddLeadForm = () => {
         const res = await axios.post(url, json, {
           headers: { "Content-Type": "application/json" },
         });
-        res.data.data;
+        console.log("Post completed", res.data.data);
       } catch (err) {
         console.log("Error posting data", err);
       }

@@ -34,7 +34,7 @@ function App() {
     try {
       const url = "https://bitna-senior-test.herokuapp.com/api/leads";
       const res = await axios.get(url);
-      console.log(res.data.data);
+      // console.log(res.data.data);
       setLeads(res.data.data);
     } catch (err) {
       console.log("Error fetching data: ", err);
