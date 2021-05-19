@@ -21,7 +21,6 @@ const AddLeadForm = () => {
   const locationStringInputRef = useRef();
 
   const formSubmissionHandler = (event) => {
-    event.preventDefault();
     // ref the input value on submit
     const firstName = firstNameInputRef.current;
     const lastName = lastNameInputRef.current;
