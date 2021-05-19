@@ -1,0 +1,16 @@
+$border: 1px solid black;
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: $border;
+  text-align: center;
+  button:first-child {
+    margin-right: 0.5rem;
+  }
+}
